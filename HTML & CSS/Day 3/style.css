@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Robot-variable;
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+#p1 {
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.odd {
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    /* If a font is not available, the browser will try to use the next font in the list */
+}
+
+#li1 {
+    font-family: Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    /* 16px is the default font size for most browsers */
+}
+
+#li2 {
+    font-family: 'Segoe UI', Tahoma, "Geneva", Verdana, sans-serif;
+    font-size: 1em;
+    /* 1em is equivalent to 100% */
+    /* 1.1em is equivalent to 110% */
+
+}
+
+#li3 {
+    font-family: 'Lucida Console', 'Courier New', monospace;
+    font-weight: bold;
+
+}
+
+#li4 {
+    font-family: 'Robot-variable', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+#pre1 {
+    border: 3px solid hsl(262, 100%, 56%);
+    border-radius: 20px;
+}
+
+#pre2 {
+    border-bottom: 3px solid red;
+    border-top: 3px solid orange;
+    border-left: 3px dotted yellow;
+    border-right: 3px dotted green;
+    border-radius: 10px;
+}
+
+#psh {
+    text-shadow: 3px 3px 5px hsl(0, 100%, 61%);
+
+    /* Horizontal Vertical blur color */
+}
+
+#shadow-box {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(240, 100%, 50%);
+    box-shadow: 10px 10px 20px;
+    /* Horizontal Vertical blur */
+    /* box shadow adds effect */
+}
+
+.box {
+    border: 5px solid ;
+    font-size: 2em;
+    width: 150px;
+    height: 150px;
+}
+
+#box1{
+    background-color: hsl(0, 100%, 61%);
+    margin: 50px;
+    /* this adds margin to top,right,bottom,left  */
+}
+
+#box2{
+    background-color: hsl(197, 100%, 50%);
+    margin: auto;
+    /* Centers the box */
+}
+
+#box3{
+    background-color: hsl(151, 100%, 50%);
+    margin-left: auto;
+    /* this adds margin to the left side only */
+}
+
+#img1{
+    float: left;
+    margin-right: 20px;
+}
+
+#img2{
+    float: right;
+    margin-left: 10px;
+}
+
+#div-float{
+    border: 3px solid;
+    display: flow-root;
+    /* If there is anything that it is floating it will be contained within this div */
+}
+
+#overflow-box{
+    border: 2px solid;
+    height: 75px;
+    overflow: visible;
+    /* If any inner elements will overflow allow it to do so (default) */
+    /* scroll = the box contains a scroll bar (vertical and horizontal), if there is not enough content within the container we will still have the scroll bar but disabled  */
+    /* auto = adds scroll bars when necessary */
+    /* hidden = hides the overflowing content (you will not be able to see it but u can interact with it) */
+    /* clip = similar to hidden, used with 'overflow-clip-margin : 13px' stating how much amount the content is clipped and the rest is hidden */
+}
+
+#div-dispaly{
+    background-color: hsl(0, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: inline;/* makes the element inline-level */
+    /* visibility: hidden; it is hidden but still takes up space */
+    /* display:none; removes the element from the page completely */
+    /*  */
+}
+
+#span-display{
+    background-color: hsl(120, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: block; /* makes the element block-level */
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: darkblue;
+        }
+
+        /* body {
+            background-color: lightseagreen;
+        } */
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CSS is short for cascading style sheet -->
+    <!-- There are 3 ways to apply css: 1. Inline (using the style attribute in an HTML element)
+                                        2. Internal (Inside a <style> tag in the head) 
+                                        3. External (using a .css file)
+    -->
+
+    <h1 style="color: darkred;">Inline</h1>
+
+    <p>Internal</p>
+
+    <p id="p1">External(By ID)</p>
+
+    <p class="odd">External(By Class)</p>
+
+    <hr>
+
+    <h1>CSS Colors</h1>
+
+    There are many ways to specify colors in CSS, including:
+    <ul>
+        <li style="color: darkblue;">Named Colors: e.g., darkblue</li>
+        <li style="color: #FF0000 ;">Hexadecimal Colors: e.g., #FF0000 for red</li>
+        <li style="color: rgb(0, 121, 0);">RGB Colors: e.g., rgb(0, 121, 0) for dark green</li>
+        <li style="color: hsl(276, 100%, 30%);">HSL (Hue, Saturation, Lightness) Colors: e.g., hsl(276, 100%, 30%) for
+            dark purple</li>
+    </ul>
+
+    <hr>
+
+    <h1>CSS Fonts</h1>
+
+    <ul>
+        <li id="li1">Font Family: Impact , font-size: 16px(deafult)</li>
+        <li id="li2">Font Family: Segoe UI , font-size: 1em (100% of the parent element's font size)
+        </li>
+        <li id="li3">Font Family: Lucida Console , font-weight: bold</li>
+        <li id="li4">Font Family: Franklin Gothic Medium , font-style: italic</li>
+    </ul>
+
+    <hr>
+
+    <h1>Borders</h1>
+
+    <pre id="pre1"> You can define borders in css like this: 
+        border: 3px solid hsl(262, 100%, 56%);
+        border-radius: 20px;</pre>
+
+    <pre id="pre1"> You can define borders in css like this: 
+        border-style: 3px  ;
+        border-width: solid;
+        border-color: hsl(262, 100%, 56%)
+        border-radius: 20px;</pre>
+
+    <pre id="pre2"> You can define borders in css like this: 
+        border-bottom: 3px solid red;
+        border-top: 3px solid orange;
+        border-left: 3px dotted yellow;
+        border-right: 3px dotted green;
+        border-radius: 10px;</pre>
+
+    <hr>
+
+    <h1 id="psh">Shadows</h1>
+
+    <div id="shadow-box"></div>
+
+    <hr>
+
+    <h1>Margins</h1>
+    <!-- Margins = Space around an element -->
+
+    <div class="box" id="box1">box 1</div>
+    <div class="box" id="box2">box 2</div>
+    <div class="box" id="box3">box 3</div>
+
+    <hr>
+
+    <h1>CSS Float</h1>
+    <!-- Float = allows other elements to flow around it -->
+    <!-- Useful with images and block level elements like div sections -->
+
+    <div id="div-float">
+
+        <img src="Media/Generic-Basketball.H03.2k.png" height="150" id="img1">
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odit maiores soluta assumenda provident
+            voluptates deserunt est architecto enim eos commodi, tenetur corporis unde quibusdam quidem iure inventore
+            fuga
+            officiis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odit maiores soluta assumenda provident
+            voluptates deserunt est architecto enim eos commodi, tenetur corporis unde quibusdam quidem iure inventore
+            fuga
+            officiis!</p>
+
+        <img src="Media/Hockey-Pads.H03.2k.png" height="150" id="img2">
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odit maiores soluta assumenda provident
+            voluptates deserunt est architecto enim eos commodi, tenetur corporis unde quibusdam quidem iure inventore
+            fuga
+            officiis!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus odit maiores soluta assumenda provident
+            voluptates deserunt est architecto enim eos commodi, tenetur corporis unde quibusdam quidem iure inventore
+            fuga
+            officiis!</p>
+    </div>
+
+    <hr>
+
+    <h1>CSS Overflow</h1>
+    <!-- Overflow = property that sets the desired behavior when content doesn't fit in the parent element box (overflows) -->
+
+    <div id="overflow-box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptate. Voluptas, quisquam. Voluptas
+            doloremque cumque, voluptate corporis deleniti magnam, nisi consequatur, neque sed dicta quisquam
+            consequatur.</p>
+    </div>
+
+    <hr>
+
+    <h1>CSS Display Property </h1>
+
+    <!-- Display = property that controls how an element is displayed. -->
+    <!-- Html elements are either: 
+          1. block-level = start on a new line and take up the full width available (e.g., <div>, <p>, <h1>-<h6>, form, header, footer)
+          2. inline-level = do not start on a new line and only take up as much width as necessary (e.g., <span>, <a>, <img>) -->
+    <!-- By utilizing the display property, you can change an element's display behavior from inline to block and vice versa -->
+
+    <div id="div-dispaly">div</div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia quo perspiciatis quaerat harum vitae
+    aliquam non modi, qui cum quod facilis odio dolore dolores dolor, consectetur magni? Molestias, maiores.
+    <span id="span-display">span</span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam officia quo perspiciatis quaerat harum vitae
+    aliquam non modi, qui cum quod facilis odio dolore dolores dolor, consectetur magni? Molestias, maiores.
+    
+</body>
+
+</html>
