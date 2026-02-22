@@ -46,13 +46,14 @@ h1 {
 #pre1 {
     border: 3px solid hsl(262, 100%, 56%);
     border-radius: 20px;
+    /* Order : Top, Right, Bottom, Left */
 }
 
 #pre2 {
-    border-bottom: 3px solid red;
     border-top: 3px solid orange;
-    border-left: 3px dotted yellow;
     border-right: 3px dotted green;
+    border-bottom: 3px solid red;
+    border-left: 3px dotted yellow;
     border-radius: 10px;
 }
 
@@ -82,12 +83,13 @@ h1 {
     background-color: hsl(0, 100%, 61%);
     margin: 50px;
     /* this adds margin to top,right,bottom,left  */
+    /* order: top, right, bottom, left */
 }
 
 #box2{
     background-color: hsl(197, 100%, 50%);
     margin: auto;
-    /* Centers the box */
+    /* Centers the box horizontally */
 }
 
 #box3{

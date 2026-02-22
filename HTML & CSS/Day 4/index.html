@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=youtube_activity" />
+</head>
+
+<body>
+
+    <h1>CSS Height & Width</h1>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>This is #1</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dicta, sed officiis dolore voluptates est
+                minus
+                autem inventore ad dolor doloremque! Similique modi tenetur in quae nemo adipisci sint dolor.</p> -->
+        </div>
+
+        <div class="box">
+            <h2>This is #2</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dicta, sed officiis dolore voluptates est
+                minus
+                autem inventore ad dolor doloremque! Similique modi tenetur in quae nemo adipisci sint dolor.</p> -->
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+
+
+    <h1>CSS Positions</h1>
+    <!-- Positions:
+     relative = positioned relative to its normal position
+     fixed = positioned relative to the browser window(Viewport)
+     absolute = positioned relative to the nearest positioned ancestor 
+     sticky = positioned based on scroll position 
+     static = always positioned according to the normal flow of the page, are not affected by the top, bottom, left, and right properties. -->
+
+    <!-- The main difference is that fixed elements are always pinned to the browser viewport, while sticky elements scroll with the page until they hit a specified offset, at which point they become fixed within their parent -->
+
+    <div id="box1">
+        <div id="box2"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+    <h1>CSS background image</h1>
+
+    <h3>Hello</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam ipsam quas consectetur, perspiciatis
+        repellat. Ipsum eius deleniti, beatae blanditiis unde laborum odio iste dolor ea. Consequuntur accusantium ea
+        nihil!</p>
+
+    <hr>
+
+    <h1>CSS combinators</h1>
+    <!-- Combinators = explain the relationship between listed selectors 
+        = descendant
+      > = child 
+      ~ = general sibling
+      + = adjacent sibling -->
+
+
+    <div id="container">
+        <p>Children</p>
+        <p>Children</p>
+
+        <div>
+            <p>descendant</p>
+        </div>
+
+    </div>
+
+    <p>adjacent sibling</p>
+    <p>general sibling</p>
+
+
+    <hr>
+
+    <h1> CSS pseudo-classes </h1>
+    <!-- Pseudo-classes = used to define a special state of an element: 
+        hover 
+        active = when the element is being activated by the user (e.g., clicked on)
+        :not(selector) = selects elements that do not match the specified selector
+        nth-child(n) = selects the nth child of a parent element, where n can be a number, a keyword (e.g., odd, even), or a formula (e.g., 2n+1)
+        focus, first-child, last-child, only-child, etc. -->
+
+    <a href="https://google.com">google</a>
+
+    <ul>
+        <li>This is #1</li>
+        <li>This is #2</li>
+        <li>This is #3</li>
+        <li>This is #4</li>
+        <li>This is #5</li>
+        <li>This is #6</li>
+        <li>This is #7</li>
+        <li>This is #8</li>
+
+    </ul>
+
+    <div id="greeting">Hover Here
+        <p id="h">hello
+
+        </p>
+    </div>
+
+    <hr>
+
+    <h1>CSS pseudo-elements</h1>
+    <!-- Pseudo-elements = used to style specific parts of an element: 
+        selector::pseudo-element
+        h1::first-letter = styles the first letter of an element
+        selector::selection = when the user selects text in an element 
+        selector::before = added before the content of an element
+        selector::after = added after the content of an element -->
+
+    <h3>Hello</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum dolores nemo eos, tenetur quisquam et neque
+        repellat repudiandae rem, qui ad quam culpa illum necessitatibus animi accusantium ut inventore perspiciatis!
+    </p>
+
+    <ul id="fruit">
+        <li id="apple">apple</li>
+        <li id="orange">orange</li>
+        <li id="banana">banana</li>
+
+    </ul>
+
+    <hr>
+
+    <h1>CSS pagination</h1>
+    <!-- A method by which a document is seperated into pages, and numbers are given -->
+
+    <h3>This page 1</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quas dolorum ducimus quos saepe sequi alias eaque!
+        Commodi expedita exercitationem earum magni! Fuga adipisci veniam minus vel dolores consectetur quidem?</p>
+
+        <div class="pagination">
+            <a href="index.html"> < </a>
+            <a href="index.html" class="active">1</a>
+            <a href="page2.html">2</a>
+            <a href="page3.html">3</a>
+            <a href="page2.html">></a>
+
+        </div>
+
+
+        <hr>
+
+        <h1>CSS dropdown menus</h1>
+
+        <div class="dropdown">
+            <button>Food</button>
+            <div class="content">
+                <a href="">Apple</a>
+                <a href="">Orange</a>
+                <a href="">Banana</a>
+            </div>
+        </div>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti earum vero laboriosam impedit dolore quam error possimus. Magni, velit sit? Eligendi, iusto facere. Voluptatibus, autem accusamus labore perspiciatis harum ratione!</p>
+
+        <hr>
+
+        <h1>CSS navigation bar</h1>
+
+        <h3>Omar</h3>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <main>
+            <h3>This is the home page</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsum excepturi facere est. Aut, perferendis accusamus cupiditate iusto possimus quidem expedita nobis vero, voluptas aspernatur sed optio, error temporibus consectetur.</p>
+        </main>
+
+        <hr>
+
+        <h1>CSS website layout</h1>
+
+        <aside>
+            <h2>This is aside</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, debitis? Blanditiis nisi explicabo quibusdam error praesentium necessitatibus in perspiciatis neque modi? Laboriosam quod voluptatem quia nemo exercitationem maxime nesciunt quasi.</p>
+        </aside>
+
+        <section>
+            <h2>This is section</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, debitis? Blanditiis nisi explicabo quibusdam error praesentium necessitatibus in perspiciatis neque modi? Laboriosam quod voluptatem quia nemo exercitationem maxime nesciunt quasi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, debitis? Blanditiis nisi explicabo quibusdam error praesentium necessitatibus in perspiciatis neque modi? Laboriosam quod voluptatem quia nemo exercitationem maxime nesciunt quasi.</p>
+
+        </section>
+
+        <article>
+            <h2>This is article</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, debitis? Blanditiis nisi explicabo quibusdam error praesentium necessitatibus in perspiciatis neque modi? Laboriosam quod voluptatem quia nemo exercitationem maxime nesciunt quasi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, debitis? Blanditiis nisi explicabo quibusdam error praesentium necessitatibus in perspiciatis neque modi? Laboriosam quod voluptatem quia nemo exercitationem maxime nesciunt quasi.</p>
+
+        </article>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <hr>
+
+        <h1>CSS image gallery</h1>
+
+        <div class="gallery">
+            <a href="Media/image.png" target="_blank">
+
+                <img src="Media/image.png" alt="salad" width="200">
+            </a>
+            <div class="description">salad</div>
+        </div>
+
+        <div class="gallery">
+            <a href="Media/best-homemade-tomato-soup-recipe-1x1-1.jpg" target="_blank">
+
+                <img src="Media/best-homemade-tomato-soup-recipe-1x1-1.jpg" alt="soup" width="200">
+            </a>
+            <div class="description">soup</div>
+        </div>
+
+        <hr>
+
+        <h1>CSS icons</h1>
+
+        <a href="https://www.youtube.com" target="_blank">
+
+            <svg class=yt xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#e10000"><path d="M629-212.9q-30.14.95-57.17 1.42-27.03.48-48.2.48-24.26 1-45.63 1-79 0-148.17-3-58.76-1.87-116.35-5.63-57.59-3.77-83.31-10.23-29.28-7.84-50.67-29.13-21.4-21.3-28.96-49.95-6.25-25.68-10.16-62.53t-6.14-70.36Q32-481.03 32-522.35q0-41.32 2.18-81.32 2.18-33.33 6-70.22t10.74-62.87Q58-766 79.38-786.69q21.37-20.69 50.63-28.31 25.72-6.8 83.3-10.77 57.59-3.96 116.85-6.23 68.63-2 147.92-3 79.29 1 148.09 3 58.76 2 116.36 6 57.59 4 83.31 10.86 29.08 8 50.22 28.82Q897.21-765.5 905-737q6.4 25.9 10.13 63.06 3.74 37.16 5.87 70.94 2 39.2 3 80.54V-504q-21.58-8.94-43.79-13.47Q858-522 835-522q-92.84 0-158.42 64.99Q611-392.03 611-299.83q0 23.33 4.5 45.16T629-212.9ZM389-389l231-133-231-134v267Zm401 223v-89h-90v-89h89.5v-89H879v89h89v89h-89v89h-89Z"/></svg>
+        </a>
+
+        <hr>
+
+        <h1>CSS flexbox</h1>
+
+        <div class="flexcontainer">
+            <div class="flexbox" id="flex1">1</div>
+            <div class="flexbox" id="flex2">2</div>
+            <div class="flexbox" id="flex3">3</div>
+            <div class="flexbox" id="flex4">4</div>
+            
+            <!-- <div class="flexbox" id="flex1">1</div>
+            <div class="flexbox" id="flex2">2</div>
+            <div class="flexbox" id="flex3">3</div>
+            <div class="flexbox" id="flex4">4</div> -->
+        </div>
+
+        <hr>
+
+        <h1>CSS transformations</h1>
+        <!-- Transform = Css property lets you rotate, scale, skew, or translate an element -->
+
+        <div id="transbox">Hi</div>
+
+        <hr>
+
+        <h1>CSS animations</h1>
+
+        <div id="animation">Hi</div>
+
+
+</body>
+
+</html>

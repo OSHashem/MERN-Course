@@ -1,0 +1,449 @@
+* {
+    /* anything that is written here will be applied to all elements */
+    box-sizing: border-box;
+    /* when calculating the width or height of the element, disregard any of the border and padding */
+}
+
+.box {
+    border: 2px solid;
+    /* By deafult width and height are auto (they are set to the content size) */
+    width: 50%;
+    /* This will take 50% the width of our viewport*/
+    float: left;
+
+    text-align: center;
+
+    max-width: 55%;
+    /* This will override the width property if the viewport is smaller than 25% of the screen width */
+}
+
+#box1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: static;
+    /* positioned to relative nearest ancestor */
+    /* Now if we moved box 1 anywhere box 2 will move with it */
+    top: 50px;
+    left: 50px;
+}
+
+body {
+    /* background-image: url(Media/handsome-young-man-cycling-on-the-road-2022-12-15-18-18-17-utc-3.jpg); */
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-attachment: fixed;
+    /* Sets wether the background image scrolls with the content or stays fixed */
+    background-size: cover;
+    /* The image will take up the entire space of my background */
+}
+
+#container p {
+    background-color: hsl(60, 100%, 65%);
+    /* Descendant */
+}
+
+#container>p {
+    background-color: hsl(10, 100%, 65%);
+    /* Children */
+}
+
+#container~p {
+    background-color: hsl(200, 100%, 65%);
+    /* general sibling */
+}
+
+#container+p {
+    background-color: hsl(129, 100%, 65%);
+    /* adjacent sibling */
+}
+
+a:link {
+    color: hsl(220, 100%, 74%)
+}
+
+a:hover {
+    color: hsl(220, 100%, 86%);
+    font-size: 1.1em;
+}
+
+a:active {
+    color: hsl(240, 100%, 58%);
+    font-size: 1.1em;
+
+}
+
+a:visited {
+    color: grey;
+}
+
+/* li:not(:hover){
+    background-color: hsl(0, 0%, 76%);
+}
+
+li:nth-child(2n){
+    background-color: hsl(60, 100%, 75%);
+} */
+
+#greeting p#h {
+    padding: 10px;
+    display: none;
+    background-color: hsl(220, 100%, 86%);
+
+}
+
+#greeting:hover p#h {
+    display: block;
+}
+
+h3::first-letter {
+    font-size: 2em;
+    font-style: italic;
+}
+
+p::selection {
+    color: rgb(74, 255, 74);
+    background-color: black;
+    /* when the user selects text in a paragraph */
+}
+
+#fruit li::before {
+    content: "✔";
+}
+
+#apple::after {
+    content: "🍎";
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pagination a.active {
+    background-color: hsl(144, 100%, 50%);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 80%);
+    min-width: 160px;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown .content a:hover {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.dropdown button:hover {
+    background-color: hsl(0, 0%, 70%);
+}
+
+h3 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.navbar a:hover {
+    /* color: hsl(220, 100%, 86%); */
+    background-color: hsl(0, 0%, 49%);
+}
+
+.navbar li {
+    float: left;
+}
+
+main {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+aside,
+section,
+article {
+    width: 33%;
+    float: left;
+    padding: 24px;
+}
+
+/* Used for responsive design */
+@media screen and (max-width:600px) {
+
+    aside,
+    section,
+    article {
+        width: 100%;
+    }
+}
+
+.gallery {
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 57%);
+    margin: 4px;
+    /* text-align: center; */
+
+}
+
+.gallery a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+}
+
+.gallery .description {
+    text-align: center;
+    padding: 10px;
+}
+
+.gallery:hover {
+    border: 2px solid #e10000;
+}
+
+.yt {
+    fill: #e10000;
+    margin-left: 40vw;
+}
+
+.yt:hover {
+    fill: #ed0000;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.yt a {
+    text-decoration: none;
+}
+
+#flex1 {
+    background-color: hsl(10, 100%, 65%);
+    align-self: center;
+    /* to align a flex item to the center of the container. (cross/y-axis) */
+    /* There is also `flex-start`, `flex-end`, `stretch` */
+    order: 1;
+    /* 1 for the end */
+    /* -1 for the beginning */
+}
+
+
+#flex4 {
+    background-color: hsl(218, 100%, 65%);
+}
+
+#flex2 {
+    background-color: hsl(69, 93%, 58%);
+}
+
+#flex3 {
+    background-color: hsl(123, 93%, 61%);
+}
+
+.flexbox {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 8em;
+    border-radius: 20px;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    border: 10px solid black;
+    /* row is the default value */
+    /* There is also: column, row-reverse, column-reverse */
+    justify-content: flex-start;
+    /* Justifies the flex items along the main axis(x-axis) */
+    /* There is also: `flex-end`, `center`, `space-between`, `space-around` */
+    align-items: flex-start;
+    /* aligns the flex items along the cross axis(y-axis), only works when there are multiple lines of flex items */
+    /* there is also: `flex-end`, `center`, `baseline` */
+    /* flex-wrap: nowrap; default */
+    flex-wrap: wrap;
+    /* align-content: flex-start; */
+    /* Reomves the space between flex lines */
+    column-gap: 1em;
+    /* add gap between flex columns */
+    row-gap: 1em;
+    /* add gap between flex rows */
+}
+
+#transbox {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(10, 100%, 65%);
+    text-align: center;
+    font-size: 10em;
+
+    transform: translate(40px, 60px) rotateZ(60deg) scale(0.1);
+
+    /* There is also :
+    translateX(5px or 5%), translateY(), Translate(x trans, y trans) 
+    rotate(1deg, 1deg), rotateX(1deg), rotateY(1deg), rotateZ(1deg)
+    scale(x=1 for 100% ,y), scaleX(),scaleY(),
+    skewX(10deg), skewY(10deg), skew(x, y) */
+}
+
+#animation {
+    width: 200px;
+    height: 200px;
+    background-color: hsl(10, 100%, 65%);
+    text-align: center;
+    font-size: 10em;
+    animation-duration: 3s;
+    animation-name: slideLeft;
+    animation-iteration-count: 2;
+    /* How much the animation repeats */
+    animation-direction: alternate;
+    animation-direction: normal;
+    animation-play-state: running; 
+     /* running or paused */
+     animation-timing-function: steps(2);
+     /* Takes 2 steps to complete the animation*/
+     /* 'ease-in-out' Speeds up then slows down when ending */
+     /* There is also linear (normal speeed) */
+
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(300px);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(300%);
+    }
+}
+@keyframes slideDown {
+    to {
+        transform: translateY(300%);
+    }
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotateZ(360deg);
+    }
+    /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(2, 2);
+    }
+    /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
+}
+
+@keyframes shrink{
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+    /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
+}
+
+@keyframes shrink{
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+    /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
+}
+
+@keyframes fade{
+    50% {
+        opacity:0;
+    }
+    /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
+}
+
+@keyframes colorChange{
+    0%{
+        background-color: hsl(10, 100%, 65%);
+    }
+    20%{
+        background-color: hsl(240, 100%, 58%);
+    }
+    40%{
+        background-color: hsl(60, 100%, 65%);
+    }
+    60%{
+        background-color: hsl(0, 0%, 49%);
+    }
+    80%{
+        background-color: indigo;
+
+    }
+    100%{
+        background-color: magenta;
+    }
+    
+}
