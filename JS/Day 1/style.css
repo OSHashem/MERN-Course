@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana;
+    /* font-size: 1.2em; */
+}
+
+#buttons {
+    text-align: center;
+}
+
+.btns {
+    background-color: hsl(214, 100%, 72%);
+    border-radius: 5px;
+    border: 1.2px solid black;
+    font-size: 1.5em;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.25s;
+}
+
+.btns:hover {
+    background-color: hsl(214, 100%, 60%);
+}
+
+
+#number {
+    text-align: center;
+    display: block;
+    font-size: 8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
