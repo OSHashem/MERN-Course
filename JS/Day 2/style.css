@@ -1,0 +1,23 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mybtn {
+    font-size: 2.5em;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+    margin-left: 40%;
+
+}
+
+.labels {
+    font-size: 3em;
+    margin-left: 43%;
+}
+
+button{
+    font-size: 1em;
+}
