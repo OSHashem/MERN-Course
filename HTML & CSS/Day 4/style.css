@@ -358,12 +358,12 @@ article {
     /* How much the animation repeats */
     animation-direction: alternate;
     animation-direction: normal;
-    animation-play-state: running; 
-     /* running or paused */
-     animation-timing-function: steps(2);
-     /* Takes 2 steps to complete the animation*/
-     /* 'ease-in-out' Speeds up then slows down when ending */
-     /* There is also linear (normal speeed) */
+    animation-play-state: running;
+    /* running or paused */
+    animation-timing-function: steps(2);
+    /* Takes 2 steps to complete the animation*/
+    /* 'ease-in-out' Speeds up then slows down when ending */
+    /* There is also linear (normal speeed) */
 
 }
 
@@ -384,6 +384,7 @@ article {
         transform: translateY(300%);
     }
 }
+
 @keyframes slideDown {
     to {
         transform: translateY(300%);
@@ -394,6 +395,7 @@ article {
     50% {
         transform: rotateZ(360deg);
     }
+
     /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
 }
 
@@ -401,49 +403,58 @@ article {
     50% {
         transform: scale(2, 2);
     }
+
     /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
 }
 
-@keyframes shrink{
+@keyframes shrink {
     50% {
         transform: scale(0.5, 0.5);
     }
+
     /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
 }
 
-@keyframes shrink{
+@keyframes shrink {
     50% {
         transform: scale(0.5, 0.5);
     }
+
     /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
 }
 
-@keyframes fade{
+@keyframes fade {
     50% {
-        opacity:0;
+        opacity: 0;
     }
+
     /* It does the transform animation over the specified duration (50% of the animation-duration then it goes back to the original state in the remaining time left) */
 }
 
-@keyframes colorChange{
-    0%{
+@keyframes colorChange {
+    0% {
         background-color: hsl(10, 100%, 65%);
     }
-    20%{
+
+    20% {
         background-color: hsl(240, 100%, 58%);
     }
-    40%{
+
+    40% {
         background-color: hsl(60, 100%, 65%);
     }
-    60%{
+
+    60% {
         background-color: hsl(0, 0%, 49%);
     }
-    80%{
+
+    80% {
         background-color: indigo;
 
     }
-    100%{
+
+    100% {
         background-color: magenta;
     }
-    
+
 }
