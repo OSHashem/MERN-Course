@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+}
+
+form{
+    max-width: 350px;
+    margin: auto;
+}
+
+#textBox{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 2em;
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 5px;
+}
+
+label{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 15px;
+    background-color: hsl(0, 100%, 60%);
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: hsl(0, 100%, 45%);
+}
+
+p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
