@@ -28,6 +28,7 @@ function isEven(number) {
 
 ////////////////////////////////////////////////////////////////////////
 
+
 // JS Variable Scope
 // variable scope = where a variable is recognized and accessible (local vs global)
 // You can use the same variables name as long as they are in different scopes
@@ -47,7 +48,61 @@ function function2() {
 
 function1();
 
+let y = 5;
+function myfunc() {
+  y = 3;
+}
+
+myfunc(); // Turns x = 3
+alert(y); // Output: 3
+
 ////////////////////////////////////////////////////////////////////////
+
+
+// JS Hoisting
+// Hoisting is JavaScript’s behavior of moving variable and function declarations to the top of their scope before execution.
+// Only declarations are hoisted — assignments are NOT.
+
+// When you write:
+var z = 5;
+
+// JavaScript treats it as:
+var z;   // hoisted, inital value: undefined
+z = 5;   // stays in place
+
+// Example 
+a = 5;
+alert(a); 
+var a;
+
+// It will be:
+var a; //Hoisted, inital value: undefined
+a = 5;
+alert(a); // Output: 5
+
+// Example
+var b;
+alert(b); // Output: undefined
+b = 7;
+
+// Reason
+// b is declared (hoisted)
+// But not assigned yet
+// Default value = undefined
+
+// Unlike var,  "let" and "const":
+// Are hoisted
+// BUT placed in a Temporal Dead Zone (TDZ)
+// Cannot be used before declaration
+
+// Example:
+
+d = 5;
+let d;
+// Output: ReferenceError (Cannot access 'd' before initialization)
+
+////////////////////////////////////////////////////////////////////////
+
 
 // JS TEMPERATURE CONVERSION PROGRAM
 
@@ -70,3 +125,5 @@ function convert() {
     result.textContent = "select a unit";
   }
 }
+
+// 
