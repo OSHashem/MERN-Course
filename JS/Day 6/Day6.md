@@ -2,7 +2,9 @@
 
 ## Arrays
 Arrays are variables that hold multiple values in a single structure.
-
+```javascript
+const fruits = new Array ('Orange', 'Banana', 'Apple'); 
+```
 ### Common Array Methods
 - `push()` - Add element to end
 - `pop()` - Remove last element

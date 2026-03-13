@@ -5,6 +5,7 @@
 // hold more than 1 value
 
 let fruits = ["apple", "orange", "banana"];
+// const fruits = new Array ('Orange', 'Banana', 'Apple'); //Alternate way for creating an array
 
 fruits.push("coconut"); // add an element to the end of the array
 fruits.pop(); // removes last element
