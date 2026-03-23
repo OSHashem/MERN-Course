@@ -1,0 +1,71 @@
+#clock-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    height: 10vh;
+
+}
+
+#clock {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+
+}
+
+#container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    height: 30vh;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+#display {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 4em;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+#controls button {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#startBtn {
+    background-color: hsl(115, 100%, 40%)
+}
+
+#startBtn:hover {
+    background-color: hsl(120, 100%, 31%);
+}
+
+#stopBtn {
+    background-color: hsl(10, 90%, 50%)
+}
+
+#stopBtn:hover {
+    background-color: hsl(15, 100%, 31%);
+}
+
+#resetBtn {
+    background-color: hsl(239, 100%, 40%)
+}
+
+#resetBtn:hover {
+    background-color: hsl(249, 100%, 31%);
+}
