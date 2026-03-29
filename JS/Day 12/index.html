@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="topic">JS DOM</h1>
+    <h1 id="welcome-msg">Welcome </h1>
+    <div id="apple" class="fruits">apple</div>
+    <div id="orange" class="fruits">orange</div>
+    <div id="banana" class="fruits">banana</div>
+
+    <h4>Root Veg</h4>
+    <ul id="Root Veg">
+        <li id="beets">beets</li>
+        <li id="carrots">carrots</li>
+        <li id="potatoes">potatoes</li>
+
+    </ul>
+
+    <h4>Non-Root Veg</h4>
+    <ul id="Non-Root Veg">
+        <li id="broccoli">broccoli</li>
+        <li id="celery">celery</li>
+        <li id="onions">onions</li>
+
+    </ul>
+
+    <hr>
+
+    <h1 id="topic">ADD/CHANGE HTML using JS </h1>
+
+    <div id="box1" class="box">
+        <p>Box1</p>
+    </div>
+
+    <div id="box2" class="box">
+        <p>Box2</p>
+    </div>
+
+    <div id="box3" class="box">
+        <p>Box3</p>
+    </div>
+
+    <div id="box4" class="box">
+        <p>Box4</p>
+    </div>
+
+    <hr>
+
+    <h1 id="topic"> JS MOUSE EVENTS </h1>
+
+    <div id="myBox">
+        Click Me 😊
+    </div>
+
+    <hr>
+
+    <h1 id="topic"> JS KEY EVENTS </h1>
+
+    <div id="keyBox"> 😃</div>
+
+    <hr>
+
+    <h1 id="topic"> HIDE and SHOW HTML using JS </h1>
+    <div id="htmlBox">
+        This is a box
+    </div>
+    <br>
+    <button id="myButton">Hide</button><br>
+
+    <hr>
+
+    <h1 id="topic"> NodeLists In JS </h1>
+
+    <button class="myButtons">Button 1</button>
+    <button class="myButtons">Button 2</button>
+    <button class="myButtons">Button 3</button>
+    <button class="myButtons">Button 4</button>
+
+    <hr>
+
+    <h1 id="topic"> ClassLists In JS </h1>
+
+    <button id="classButton">My Button</button>
+
+    <button class="classButtons">Button 1</button>
+    <button class="classButtons">Button 2</button>
+    <button class="classButtons">Button 3</button>
+
+    <hr>
+
+    <h1 id="topic"> Rock Paper Scissors Game With JS </h1>
+    <div class="choices">
+        <button onclick="playGame('rock')">👊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissors')">✌</button>
+
+    </div>
+
+    <div id="playerDisplay">PLAYER:</div>
+
+    <div id="computerDisplay">COMPUTER:</div>
+
+    <div id="result"></div>
+
+    <div class="scoreDisplay">Player Score:
+        <span id="playerScoreDisplay"></span>
+    </div>
+
+    <div class="scoreDisplay">Computer Score:
+        <span id="computerScoreDisplay"></span>
+    </div>
+
+    <hr>
+
+    <h1 id="topic"> Image Slider With JS </h1>
+
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="media/blue.png" alt="blue car">
+            <img class="slide" src="media/red.png" alt="red car">
+            <img class="slide" src="media/green.jpg" alt="green car">
+
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+
+    <!-- A button can also have a onmouseover attribute -->
+    <!-- <div onmouseover="this.style.backgroundColor='red'">myDIV.</div> -->
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
