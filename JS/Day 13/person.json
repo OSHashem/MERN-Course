@@ -1,0 +1,7 @@
+{
+    "name":"spongebob",
+    "age":30,
+    "isEmployed": true,
+    "hobbies": ["jellyfishing", "cooking", "karate"],
+    "_comment":"this is a single json object with key-value pairs"
+}

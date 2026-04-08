@@ -1,0 +1,19 @@
+[
+  {
+    "name": "spongebob",
+    "age": 30,
+    "isEmployed": true,
+    "_comment": "This is an array of objects representing people with their name, age, and employment status.(Key-value pairs)"
+  },
+  {
+    "name": "patrick",
+    "age": 34,
+    "isEmployed": false,
+    "_comment": "This is the second object in the array, representing a different person."
+  },
+  {
+    "name": "sandy",
+    "age": 27,
+    "isEmployed": false
+  }
+]
