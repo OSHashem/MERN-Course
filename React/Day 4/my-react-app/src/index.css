@@ -1,0 +1,91 @@
+#topic {
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+}
+
+.To-Do-List {
+  text-align: center;
+}
+
+.To-Do-List ol {
+  padding: 0;
+}
+
+.To-Do-List ol li {
+  /* background-color: hsl(0, 2%, 45%); */
+  list-style: none;
+  border: 2px solid hsla(0, 0%, 0%, 0.542);
+  border-radius: 5px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+
+.To-Do-List ol li span {
+  /* This will let the element take as much space as possible and grow + shrink with the size of the web browser   */
+  flex: 1;
+
+  /* The above line is the same as the writing these 3 lines */
+  /* flex-grow: 1,
+  flex-shrink: 1,
+  flex-basis:0% 
+   */
+}
+
+#newTask {
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+}
+
+
+
+button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.25s ease;
+  margin: 5px;
+}
+
+#addButton {
+  background-color: hsl(120, 35%, 58%);
+
+
+}
+
+#addButton:hover {
+  background-color: hsl(120, 35%, 48%);
+
+}
+
+#deleteButton {
+  background-color: hsl(9, 100%, 64%);
+
+}
+
+#deleteButton:hover {
+  background-color: hsl(9, 100%, 54%);
+
+}
+
+#moveButton {
+  background-color: hsl(196, 66%, 59%);
+
+}
+
+#moveButton:hover {
+  background-color: hsl(196, 66%, 49%);
+
+}
