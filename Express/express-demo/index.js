@@ -36,10 +36,13 @@ app.get("/api/customers/:id", (req, res) => {
 });
 
 app.post("/api/customers", (req, res) => {
+  // Validate the request body using the schemaValidator function
   const { error } = schemaValidator(req.body.name);
 
   if (error) return res.status(400).send(error.details[0].message);
 
+  // If the request body is valid, create a new customer object with a unique ID and the name from the request body,
+  // then add it to the customers array and send it back in the response
   const customer = { id: customers.length + 1, name: req.body.name };
 
   customers.push(customer);
@@ -47,32 +50,41 @@ app.post("/api/customers", (req, res) => {
 });
 
 app.put("/api/customers/:id", (req, res) => {
+  // first locate the customer by ID
   const customer = customers.find((c) => {
     c.id === parseInt(req.params.id);
   });
 
+  // If the customer is not found, return a 404 error response
   if (!customer)
     return res.status(404).send("Customer of given ID is not found");
 
+  // Validate the request body using the schemaValidator function
   const { error } = schemaValidator(req.body);
 
   if (error) return res.status(400).send(error.details[0].message);
 
+  // If the customer is found and the request body is valid, update the customer's name with the new value from the request body
   customer.name = req.body.name;
   res.send(customer);
 });
 
 app.delete("/api/customers/:id", (req, res) => {
+  // first locate the customer by ID
   const customer = customers.find((c) => {
     c.id === parseInt(req.params.id);
   });
 
+  // If the customer is not found, return a 404 error response
   if (!customer)
     return res.status(404).send("Customer of given ID is not found");
 
+  // If the customer is found, determine its index in the customers array
+  // then use splice() to remove it from the array,
   const index = customers.indexOf(customer);
   customers.splice(index, 1);
 
+  // then send the deleted customer object in the response
   res.send(customer);
 });
 
